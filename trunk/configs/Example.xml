@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<multiplexer xmlns="http://nrl.navy.mil/Keithley/7001/Version/1">
+
+	<slots>
+		<slot>
+			<board>7001</board>
+			<name>Slot 1</name>
+			<banks>
+				<bank>
+					<id>A</id>
+					<name>Source</name>
+					<channels>
+						<channel>
+							<name>Chamber 1</name>
+						</channel>
+						<channel>
+							<name>Chamber 2</name>
+						</channel>
+						<channel>
+							<name>Chamber 3</name>
+						</channel>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+					</channels>
+				</bank>
+				<bank>
+					<id>B</id>
+					<name>Sense</name>
+					<channels>
+						<channel>
+							<name>Chamber 1</name>
+						</channel>
+						<channel>
+							<name>Chamber 2</name>
+						</channel>
+						<channel>
+							<name>Chamber 3</name>
+						</channel>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+					</channels>
+				</bank>
+				<bank>
+					<id>C</id>
+					<name>Source</name>
+					<channels>
+						<channels>
+						<channel>
+							<name>Chamber 4</name>
+						</channel>
+						<channel>
+							<name>Chamber 5</name>
+						</channel>
+						<channel>
+							<name>Chamber 6</name>
+						</channel>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+					</channels>
+				</bank>
+				<bank>
+					<id>D</id>
+					<name>Sense</name>
+					<channels>
+						<channels>
+						<channel>
+							<name>Chamber 4</name>
+						</channel>
+						<channel>
+							<name>Chamber 5</name>
+						</channel>
+						<channel>
+							<name>Chamber 6</name>
+						</channel>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+						<channel/>
+					</channels>
+				</bank>
+			</banks>
+		</slot>
+	</slots>
+		
+	<memory>
+		<locations>
+			<location>
+				<pattern>1!1,1!11,1!21,1!31</pattern>
+			</location>
+			<location>
+				<pattern>1!2,1!12,1!22,1!32</pattern>
+			</location>
+			<location>
+				<pattern>1!3,1!13,1!23,1!33</pattern>
+			</location>
+		<locations>
+	</memory>
+	
+	<scanList>M1,M2,M3</scanList>
+ 
+	<trigger>
+		<arm>
+			<!-- Hold, Immediate, Manual, Bus, TLink, External -->
+			<source>Immediate</source>
+			<count>
+				<!-- Finite, Infinite -->
+				<limit>Infinite</limit>
+				<value>1</value>
+			</count>
+		</arm>
+		<scan>
+			<!-- Hold, Immediate, Timer, Manual, Bus, TLink, External -->
+			<source>Immediate</source>
+			<count>
+				<!-- Finite, Infinite -->
+				<limit>Infinite</limit>
+				<value>1</value>
+			<count>
+			<!-- Seconds -->
+			<delay>0.000</delay>
+			<!-- Seconds -->
+			<interval>0.000</interval>
+		</scan>
+		<channel>
+			<!-- Hold, Immediate, Timer, Manual, Bus, TLink, External -->
+			<source>Immediate</source>
+			<count>
+				<!-- Auto, Finite, Infinite -->
+				<limit>Auto</limit>
+				<value>1</value>
+			<count>
+			<!-- Seconds -->
+			<delay>0.000</delay>
+			<!-- Seconds -->
+			<interval>0.000</interval>
+		</channel>
+	</trigger>
+ 
+</multiplexer>

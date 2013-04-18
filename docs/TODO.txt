@@ -1,0 +1,16 @@
+= Kiethley 7001 Application TODO = 
+
+ # Fix: configuration file path not changing after saving to a file
+ # Add: increment to next memory location after Store
+ # Add: increment to next memory location after Add
+ # Move: Store button to left side of memory pattern indicator in Memory Dialog
+ # Move: Add button to left side of memory pattern indicator in Scan Dialog
+ # Add: description to all indicators
+ # Add: descritpion to all controls
+ # Add: read function to display currently closed and open channels on system tab
+ # Add: support for Slot 2
+ # Add: support for different types of boards
+ # Add: non-SCPI commands
+ # Add: context help documentation to all VIs
+ # Add: documentation to all VIs
+ # Add: examples

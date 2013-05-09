@@ -1,6 +1,6 @@
 = Kiethley 7001 Application TODO = 
 
- # Fix: configuration file path not changing after saving to a file
+ # Remove: Tab control
  # Add: increment to next memory location after Store
  # Add: increment to next memory location after Add
  # Move: Store button to left side of memory pattern indicator in Memory Dialog
